@@ -7,7 +7,7 @@ pipeline {
   stages {
     stage('Build') {
       steps {
-        sh 'echo "Revised build stage"'
+        sh './mvn -B clean package'
       }
     }
   }
